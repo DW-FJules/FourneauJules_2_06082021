@@ -1,30 +1,63 @@
+body
+{
+    font-family: 'Open Sans', sans-serif;
+}
 header  /*header */
 {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    border: grey solid;
 }
 header ul
 {
     display: flex;
+    justify-content: space-around;
     list-style: none;
-    background-color: aqua;
-    width: 600px;
-    height: 100px;
-    color: #0065FC;    
+    font-size: 1.3em;
+    color: #0065FC;
 }
+nav
+{
+
+    width: 40%;
+    height: 100%;
+}
+a:link 
+{ 
+ text-decoration: none; 
+} 
+a:hover /*pour survol du menu*/
+{}
 
 #logo
 {
     width: 100px;
     height: 50px;
 }  /*fin header */
-form  /*formulaire recherche marche pas!*/
+form
 {
     display: flex;
+    width: 30%;
+}
+.formulaire /*formulaire recherche marche pas!*/
+{
+    
+    border: #F2F2F2 solid;
 
 }
+.map-marker
+{
+    display: inline-block;
+    background-color: #F2F2F2;
+    width: 60px;
+    height: 60px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+
 ::placeholder /*Marseille, france*/
 {
     color: black;
@@ -35,9 +68,7 @@ form  /*formulaire recherche marche pas!*/
 form i
 {
     background-color: #F2F2F2;
-    width: 60px;
-    height: 60px;
-    text-align: center;
+
 }
 li i /*icones dans les toutes les listes*/
 {
@@ -50,37 +81,46 @@ li i /*icones dans les toutes les listes*/
 .filtres /*h2 filtres et ul de la 1ere section*/
 {
     display: flex;
-    background-color: grey;
     align-items: center;    
 }
 .filtres ul
 {
     display: flex;
-    background-color: green;
+    justify-content: space-between;
+    width: 50%;
     font-weight: bold;
     font-size: 1.2em;
     list-style: none;
 }
+
+.filtres li
+{
+    border: #F2F2F2 solid;
+    border-radius: 25%;
+}
+.filtres li:hover
+{
+    background-color: #0065FC;
+}
 .filtres h2
 {
-    background-color: aquamarine;
+
     align-items: center;
     text-align: justify;
     height: 32px;
 }
-#catégories
-{
 
-}
 
 #search-button  /*bouton de recherche formulaire 1ere section*/
 {
 
     background-color: #0065FC;
-    border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     color: white;
     font-size: 1.2em;
+    padding: 15px;
+    
 }
 #infos
 {
@@ -88,39 +128,44 @@ li i /*icones dans les toutes les listes*/
     align-items: center;
 }
 
-#info-icon
+.info-icon
 {
+    color: #0065FC;
+    display: inline-block;
     width: 20px;
     height: 20px;
     text-align: center;
-    background-color: #F2F2F2;
+    border: solid #F2F2F2;
     border-radius: 100%;
+    margin-right: 1%;
 }
-#infos p /*paragraphe info 1ere section*/
-{
-    background-color: chocolate;
-}
+
 
 .hébergements img
 {
-    width: 260px;
-    height: 160px;
+    width: 100%;
+    height: 50%;
+}
+.hébergements a /*pas utile pour l'instant voir pour rendre cliquable*/
+{
+ display: block;
+ width: 100%;
+ height: 100%;
 }
 #hébergements
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     
 }
+
+
 section.cool /*2e section*/
 {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 950px;
-    height: 650px;
-    border: yellow solid;
+    width: 60%;
     padding-left: 30px;
     margin-left: 30px;
 
@@ -129,19 +174,23 @@ section.cool /*2e section*/
 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    border: 2px solid white;
+    align-items: flex-start;
     border-radius: 20px;
-    width: 250px;
-    height: 210px;
+    width: 30%;
+    height: 45%;
     background-color: white;
     box-shadow: 0px 5px 10px #F2F2F2;
-    text-align: left;    
+    border: white solid 3px;
+
 }
+
 
 .heb-article img /*images section hebergements*/
 {
     display: flex;
+
+    flex-wrap: wrap;
+    object-fit: cover;
     width: 100%;
     height: 50%;
     border-top-left-radius: 20px;
@@ -150,10 +199,16 @@ section.cool /*2e section*/
     
 
 }
+.text
+{
+    padding-left: 10%;
+}
+
 section.cool, section.populaire /*regroupe les 2e et 3e sections*/
 {
     background-color: #F2F2F2;
     border-radius: 20px;
+
 }
 .title
 {
@@ -163,27 +218,37 @@ section.cool, section.populaire /*regroupe les 2e et 3e sections*/
 }
 .cool i, .art-pop i
 {
+    display: inline-block;
     color: #0065FC;
     font-size: 0.8em;
 }
+.grey i
+{
+    color: #F2F2F2;
+}
+
 section.populaire /*3e section*/
 {
     display: flex;
     flex-wrap: wrap;
-    width: 450px;
-    height: 800px;
+    width: 30%;
+
     flex-direction: column;
-    justify-content: space-around;
+
   
 }
-
+.chart-line-icon
+{
+    font-size: 1.5em;
+} 
 .heb-article  /*class pour les 3 premiers et les 3 derniers articles de la 1ere section*/
 {
     display: flex;
-    width: 900px;
-    height: 250px;
-    border: solid pink;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 60%;
+    width: 90%;
+    
 }
 
 
@@ -193,37 +258,39 @@ section.populaire /*3e section*/
     display: flex;
     flex-direction: column;
     height: 600px;
-    border: solid red;
+
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 
 }
 .art-pop article/*article section populaire*/
 {
     display: flex;
-    width: 390px;
-    height: 160px;
-    border: black solid;
-    justify-content: space-around;
+
+    width: 80%;
+    height: 30%;
     border-radius: 10px;
     background-color: white;
+    border: white solid 3px;
     box-shadow: 0px 5px 10px #F2F2F2;
     text-align: left;    
 }
 .art-pop img /* images des articles section populaire*/
 {
-    width: 130px;
+    width: 150px;
     height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 .simple
 {
-    border: solid purple;
+
     width: 310px;
     height: 450px;
 }
 .double
 {
-    border: solid black;
     width: 310px;
     height: 450px;
     display: flex;
@@ -234,37 +301,41 @@ section.populaire /*3e section*/
 {
     width: 100%;
     height: 150px;
+    overflow: hidden;
 } 
 .simple img
 {
-    width: 310px;
-    height: 400px;
+    width: 100%;
+    height: 85%;
+
 }
-#activités
+#activités  /*4e section*/
 {
     display: flex;
     flex-direction: column;
-    border: saddlebrown solid;
 }
-.act-articles
+.act-articles /* div tous les articles*/
 {
     display: flex;
     justify-content: space-around;
-    border: double pink;
+
 }
-.act-articles article
+.act-articles article 
 {
     border-radius: 20px;
-    border: blue double;
+
+    overflow: hidden;
+    height: 100%;
 }
 
 .simple img, .double img/*images activités a marseille */
 {
-
+    object-fit: cover;
 }
 footer /*footer*/
 {
-    height: 220px;
+    width: 100%;
+    height: 30%;
     background-color: #F2F2F2;
     display: flex;
     font-size: 1.2em;
@@ -272,11 +343,11 @@ footer /*footer*/
 }
 #container
 {
-    background-color: chocolate;
-    width: 100%;
+
+    width: 80%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+
 
 }
 .infos
@@ -291,4 +362,5 @@ footer /*footer*/
 {
     list-style: none;
     text-align: left;
+    padding-left: 0;
 }
