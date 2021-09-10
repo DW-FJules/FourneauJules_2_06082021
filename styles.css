@@ -5,7 +5,12 @@ body
     font-family: 'Open Sans', sans-serif;
     display: block;
 }
-@media screen and (max-width: 750px)
+
+
+        /*  Mediaqueries mobile version <750px  */
+
+
+@media screen and (max-width: 700px)
 {
     body
     {
@@ -15,6 +20,11 @@ body
     {
         padding-top: 5px;
         width: 100%;
+        display: block!important;
+    }
+    #logo
+    {
+        
     }
     nav.mobile-nav
     {
@@ -23,7 +33,7 @@ body
 
     #category
     {
-
+        padding: 0 15px;
     }
     .filtres li 
     {
@@ -36,8 +46,14 @@ body
         margin: 0!important;
         flex-wrap: wrap;
     }
-
-
+    i.search-icon  /*icone loupe*/
+    {
+        display: block!important;
+    }
+    .text-searchbutton
+    {
+        display: none;
+    }
 
     .desktop-nav
     {
@@ -54,6 +70,7 @@ body
         background-color: white!important;
         padding: 0!important;
         order: 2!important;
+        margin: 0 10px!important;
     }
     .heb-article
     {
@@ -85,15 +102,22 @@ body
         width: 100%!important;
         height: 100px!important;
     }
+    .text-populaire h3
+    {
+        margin: 0;
+        font-size: 1em;
+    }
     #activités
     {
         display: block!important;
         overflow: hidden!important;
+        margin: 0 15px!important;
     }
     .act-articles
     {
         display: block!important;
         width: 100%!important;
+        margin: 0!important;
     }
     .act-articles article
     {
@@ -112,13 +136,78 @@ body
     #container
     {
         display: block!important;
+        margin: 0!important;
     }
     .infos
     {
         margin: 0!important;
     }
 }
-header  /*header */
+
+        /*  Fin mediaqueries mobile version */
+
+
+        /*  Mediaqueries tablet version <850px  */
+
+
+@media screen and (min-width: 751px)
+{
+    #hébergements
+    {
+        display: block!important;
+    }
+    section.cool
+    {
+        margin: 0!important;
+        width: inherit!important;
+    }
+    .cool article
+    {
+        width: 29%!important;
+    }
+    section.populaire
+    {
+        background-color: inherit!important;
+    }
+    .art-pop img
+    {
+        width: 250px!important;
+    }
+    .act-articles
+    {
+        flex-wrap: wrap!important;
+    }
+    .act-articles article
+    {
+        margin: 0 0 10px 0!important;
+    }
+    .simple 
+    {
+        margin: 0 0 10px 0!important;
+    }
+    .simple img 
+    {
+        height: 350px!important;
+    }
+    .double 
+    {
+        width: 50%!important;
+    }
+    .infos 
+    {
+        margin-right: 20px!important;
+        font-size: 0.9em!important;
+    }
+}
+
+
+
+
+        /*  Fin mediaqueries tablet version  */
+
+        /*  Header  */
+
+header  
 {
     display: flex;
     justify-content: space-between;
@@ -142,7 +231,7 @@ header ul
 { 
     text-decoration: none;
     padding-top: 25px;
-
+    color: #000;
 } 
 
 .nav-list a:visited /* ancres du menu visitée */
@@ -222,6 +311,10 @@ form /* contient icon map champ et button */
     font-size: 1.2em;
     font-weight: bold;
     padding-left: 10px;
+}
+i.search-icon  /*icone loupe pour version mobile*/
+{
+    display: none;
 }
 
 .category-icons /* icon des filtres */
@@ -321,7 +414,7 @@ section.cool /*2e section*/
 {
 
     width: 90%;
-    margin-right: 30px;
+    margin: 0 30px 0 0;
     padding: 0 0 0 30px;
 
 }
@@ -476,11 +569,18 @@ section.populaire /*3e section*/
     
     
     justify-content: space-between;
-    
-    margin-top: 30px;
-    margin-bottom: 100px;
+    margin: 30px 0 50px 0;
     box-sizing: border-box;
 
+}
+.act-articles a:link
+{
+    text-decoration: none;
+    color: #000;
+}
+.act-articles a:visited /* ancres du menu visitée */
+{
+    color: black;
 }
 .act-articles img
 {
@@ -509,7 +609,8 @@ img.img5act , img.img6act
 }
 .act-articles h3
 {
-    padding: 0 0px 5px 20px;
+    padding: 10px 0 15px 20px;
+    margin: 0;
 }
 article.fortpomegues
 {

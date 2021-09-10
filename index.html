@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+            <!--    HEAD    -->
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +14,16 @@
     <title>Reservia</title>
 </head>
 
+            <!--    END HEAD    -->
+
+            <!--    BODY    -->
+
 <body>
     <header>        
-        <img id="logo" src="images/logo/Reservia@3x.png" alt="logo">
+        <a href="#"><img id="logo" src="images/logo/Reservia@3x.png" alt="logo"></a>
                     <!-- menu de navigation desktop-->
         <nav class="desktop-nav">
+      
             <ul>
                 <li class="nav-list" ><a href="#hébergements">Hébergements</a></li>
                 <li class="nav-list"><a href="#activités">Activités</a></li>
@@ -25,7 +32,8 @@
         </nav>
                     <!-- menu de navigation mobile <750px -->
         <nav class="mobile-nav">
-            <div class="register-mobile"><a href="#">S'inscrire</a></div>
+            
+            <a href="#" class="register-mobile">S'inscrire</a>
             <ul>
                 <li class="nav-list" ><a href="#hébergements">Hébergements</a></li>
                 <li class="nav-list"><a href="#activités">Activités</a></li>
@@ -39,7 +47,11 @@
             <form>
                 <span class="map-marker"><i class="fas fa-map-marker-alt"></i></span>
                 <input class="formulaire" type="search" id="search" name="search" placeholder="Marseille, France">
-                <button id="search-button" type="button">Rechercher</button>
+                <button id="search-button">
+                    <span class="text-searchbutton">Rechercher</span>
+                    <i class="search-icon fas fa-search"></i>
+                </button>
+
             </form>
             <div class="filtres">
                 <h2>Filtres</h2>
@@ -223,34 +235,46 @@
             <div class="act-articles">
                 <div class="simple">
                     <article><!--1er article-->
+                        <a href="#">
                         <img src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
                         <h3>Vieux Port</h3>
+                        </a>
                     </article>
                 </div>
                 <div class="double"><!--regroupe le 2e et le 3e article-->
                     <article class="fortpomegues"><!--2nd article-->
+                        <a href="#">
                         <img src="images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="activites" class="img2act">
                         <h3>Fort de Pomègues</h3>
+                        </a>
                     </article>
                     <article>
+                        <a href="#">
                         <img src="images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="activites" class="img3act">
                         <h3>Îles du Frioul</h3>
+                        </a>
                     </article>
                 </div>
                 <div class="simple">
                     <article><!--4e article-->
+                        <a href="#">
                         <img src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="activites">
                         <h3>Parc National des Calanques</h3>
+                        </a>
                     </article>
                 </div>
                 <div class="double"><!--regroupe le 5e et le 6e article-->
                     <article class="notredame"><!--5e article-->
+                        <a href="#">
                         <img src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="activites" class="img5act">
                         <h3>Notre-Dame-de-la-Garde</h3>
+                        </a>
                     </article>
                     <article>
+                        <a href="#">
                         <img src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="activites" class="img6act">
                         <h3>Parc Longchamps</h3>
+                        </a>
                     </article>
                 </div>
             </div>
@@ -283,5 +307,7 @@
         </div>
     </footer>
 </body>
+
+            <!--    BODY END    -->
 
 </html>
