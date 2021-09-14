@@ -22,15 +22,69 @@ body
         width: 100%;
         display: block!important;
     }
-    #logo
+    .top-header
     {
-        
+        display: flex!important;
+        justify-content: space-between;
+        margin: 20px 20px;
+    }
+    #mobile-logo
+    {
+        width: 100px;
+        height: 50px;
+    }
+    a.register-mobile
+    {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #0065FC;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    #desktop-logo
+    {
+        display: none;
     }
     nav.mobile-nav
     {
         display: block!important;
     }
+    .accomodation a:link
+    {
+        text-decoration: none;
+        color: #000;
+    }
+    .accomodation a:visited
+    {
+        color: #000;
+    }
+    .accomodation li:hover
+    {
+        border-bottom: #0065FC solid 2px;
 
+    }
+
+    .bottom-header
+    {
+        font-size: 0.8em;
+    }
+    .accomodation
+    {
+        width: 100%!important;
+        text-align: center;
+        padding: 0 0 15px 0;
+    }
+    .activity
+    {
+        width: 100%!important;
+        text-align: center;
+        padding: 0 0 15px 0;
+    }
+    h1
+    {
+        font-size: 1.3em;
+    }
     #category
     {
         padding: 0 15px;
@@ -102,10 +156,29 @@ body
         width: 100%!important;
         height: 100px!important;
     }
+    .text-populaire
+    {
+        position: relative;
+    }
+    .pop-infos
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .pop-stars
+    {
+        position: absolute;
+        bottom: 10px;
+    }
     .text-populaire h3
     {
         margin: 0;
         font-size: 1em;
+    }
+    .text-populaire p
+    {
+        margin: 0;
     }
     #activités
     {
@@ -122,7 +195,7 @@ body
     .act-articles article
     {
         width: 100%!important;
-        margin: 0!important;
+        margin: 0 0 20px 0!important
     }
     .simple
     {
@@ -137,6 +210,7 @@ body
     {
         display: block!important;
         margin: 0!important;
+        padding: 40px 0;
     }
     .infos
     {
@@ -150,7 +224,7 @@ body
         /*  Mediaqueries tablet version <850px  */
 
 
-@media screen and (min-width: 751px)
+@media screen and (min-width: 751px) and (max-width: 1024px)
 {
     #hébergements
     {
@@ -179,7 +253,7 @@ body
     }
     .act-articles article
     {
-        margin: 0 0 10px 0!important;
+        margin: 0 0 30px 0!important;
     }
     .simple 
     {
@@ -246,7 +320,7 @@ header ul
 }
 
 
-#logo
+#desktop-logo
 {
     width: 100px;
     height: 50px;
