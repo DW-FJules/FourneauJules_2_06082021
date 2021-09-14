@@ -59,7 +59,7 @@ body
     {
         color: #000;
     }
-    .accomodation li:hover
+    .accomodation a:hover
     {
         border-bottom: #0065FC solid 2px;
 
@@ -146,6 +146,7 @@ body
     .art-pop
     {
         width: 100%!important;
+        font-size: 0.9em;
     }
     .art-pop article
     {
@@ -156,9 +157,10 @@ body
         width: 100%!important;
         height: 100px!important;
     }
-    .text-populaire
+
+    .text-populaire p 
     {
-        position: relative;
+        margin: 0!important;
     }
     .pop-infos
     {
@@ -166,11 +168,7 @@ body
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    .pop-stars
-    {
-        position: absolute;
-        bottom: 10px;
-    }
+
     .text-populaire h3
     {
         margin: 0;
@@ -226,6 +224,10 @@ body
 
 @media screen and (min-width: 751px) and (max-width: 1024px)
 {
+    .filtres li
+    {
+        margin: 0 10px 10px 0!important
+    }
     #hébergements
     {
         display: block!important;
@@ -477,11 +479,7 @@ i.search-icon  /*icone loupe pour version mobile*/
 
     
 }
-#hébergements a
-{
-    text-decoration: none;
-    color: inherit;
-}
+
 
 
 section.cool /*2e section*/
@@ -491,6 +489,12 @@ section.cool /*2e section*/
     margin: 0 30px 0 0;
     padding: 0 0 0 30px;
 
+}
+
+.cool a
+{
+    text-decoration: none;
+    color: inherit;
 }
 .cool h2
 {
@@ -562,8 +566,10 @@ section.populaire /*3e section*/
 {
     padding: 0 30px; /* utilise margin et padding*/
 }
+
 .text-populaire
 {
+    position: relative;
     padding: 0 0 0 10px;
 }
 .text-populaire h3
@@ -573,6 +579,15 @@ section.populaire /*3e section*/
 .text-populaire p
 {
     margin: 0 0 50px 0;
+}
+.pop-infos
+{
+    margin: 10px 0 0 0;
+}
+.pop-stars
+{
+    position: absolute;
+    bottom: 10px;
 }
 
 .chart-line-icon
@@ -607,6 +622,12 @@ section.populaire /*3e section*/
     margin: 0 5px 20px 5px;
     box-shadow: 0 5px 16px #0000002e;
 }
+.art-pop a
+{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+}
 .art-pop img /* images des articles section populaire*/
 {
     width: 150px;
@@ -614,7 +635,13 @@ section.populaire /*3e section*/
     object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    margin: 5px 0 0 5px;
+    margin: 5px 0 5px 5px;
+}
+
+#activités  /*4e section*/
+{
+    margin: 50px 30px 50px 30px;
+/*supprimer flex inutile*/
 }
 .simple
 {
@@ -630,11 +657,6 @@ section.populaire /*3e section*/
 {
     height: 440px;
 
-}
-#activités  /*4e section*/
-{
-    margin: 50px 30px 50px 30px;
-/*supprimer flex inutile*/
 }
 .act-articles /* div tous les articles*/
 {
