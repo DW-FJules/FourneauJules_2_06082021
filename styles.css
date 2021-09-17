@@ -2,7 +2,7 @@
 body
 
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     display: block;
 }
 
@@ -28,6 +28,10 @@ body
         justify-content: space-between;
         margin: 20px 20px;
     }
+    .bottom-header ul
+    {
+        border-bottom: #F2F2F2 solid 2px;
+    }
     #mobile-logo
     {
         width: 100px;
@@ -50,6 +54,18 @@ body
     {
         display: block!important;
     }
+
+
+    .bottom-header
+    {
+        font-size: 0.8em;
+    }
+    .accomodation
+    {
+        width: 100%!important;
+        text-align: center;
+        padding: 0 0 15px 0;
+    }
     .accomodation a:link
     {
         text-decoration: none;
@@ -64,22 +80,25 @@ body
         border-bottom: #0065FC solid 2px;
 
     }
-
-    .bottom-header
-    {
-        font-size: 0.8em;
-    }
-    .accomodation
-    {
-        width: 100%!important;
-        text-align: center;
-        padding: 0 0 15px 0;
-    }
     .activity
     {
         width: 100%!important;
         text-align: center;
         padding: 0 0 15px 0;
+    }
+    .activity a:link
+    {
+        text-decoration: none;
+        color: #000;
+    }
+    .activity a:visited
+    {
+        color: #000;
+    }
+    .activity a:hover
+    {
+        border-bottom: #0065FC solid 2px;
+
     }
     h1
     {
