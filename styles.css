@@ -2,6 +2,7 @@
 body
 
 {
+    margin: 0;
     font-family: 'Raleway', sans-serif;
     display: block;
 }
@@ -12,10 +13,6 @@ body
 
 @media screen and (max-width: 700px)
 {
-    body
-    {
-        margin: 0;
-    }
     header
     {
         padding-top: 5px;
@@ -30,7 +27,7 @@ body
     }
     .bottom-header ul
     {
-        border-bottom: #F2F2F2 solid 2px;
+        padding: 0;
     }
     #mobile-logo
     {
@@ -60,45 +57,37 @@ body
     {
         font-size: 0.8em;
     }
-    .accomodation
+    .bottom-header a
     {
-        width: 100%!important;
-        text-align: center;
-        padding: 0 0 15px 0;
+        display: inline-block;
+        border-bottom: #F2F2F2 solid 2px;
+        width: 100%;
+        padding-bottom: 15px;
     }
-    .accomodation a:link
+    .bottom-header a:link
     {
         text-decoration: none;
         color: #000;
     }
-    .accomodation a:visited
+    .bottom-header a:visited
     {
         color: #000;
     }
-    .accomodation a:hover
+    .bottom-header a:hover
     {
+        color: #0065FC;
         border-bottom: #0065FC solid 2px;
 
+    }
+    .accomodation
+    {
+        width: 100%!important;
+        text-align: center;
     }
     .activity
     {
         width: 100%!important;
         text-align: center;
-        padding: 0 0 15px 0;
-    }
-    .activity a:link
-    {
-        text-decoration: none;
-        color: #000;
-    }
-    .activity a:visited
-    {
-        color: #000;
-    }
-    .activity a:hover
-    {
-        border-bottom: #0065FC solid 2px;
-
     }
     h1
     {
@@ -325,7 +314,7 @@ header ul
 .nav-list a:link /* ancres vers les sections */
 { 
     text-decoration: none;
-    padding-top: 25px;
+    padding-top: 18px;
     color: #000;
 } 
 
@@ -487,7 +476,7 @@ i.search-icon  /*icone loupe pour version mobile*/
     text-align: center;
     border: solid #F2F2F2;
     border-radius: 100%;
-    margin-right: 1%;
+    margin-right: 10px;
 }
 
 #hébergements
