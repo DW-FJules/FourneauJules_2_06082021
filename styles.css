@@ -639,7 +639,8 @@ section.populaire /*3e section*/
 }
 .art-pop img /* images des articles section populaire*/
 {
-    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
     height: 150px ;
     object-fit: cover;
     border-top-left-radius: 15px;
